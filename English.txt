@@ -524,4 +524,4 @@ local Label = Tab:CreateLabel("Library: Rayfield")
 
 local Label = Tab:CreateLabel("Creator： YawaPaso")
 
-local Paragraph = Tab:CreateParagraph({Title = "Supported game by this Scripts", Content = "露部六区洲基地"})
+local Paragraph = Tab:CreateParagraph({Title = "Supported game by this Scripts", Content = "露部六区洲基地"}) 
