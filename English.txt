@@ -61,7 +61,7 @@ local Button = Tab:CreateButton({
 	Interact = 'Changable',
 	Callback = function()
 		local args = {
-			[1] = "Nambu 14"
+			[1] = "Nambu14"
 		}
 
 		game:GetService("ReplicatedStorage"):WaitForChild("ItemBuyingEvent"):FireServer(unpack(args))
