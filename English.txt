@@ -192,6 +192,20 @@ local Button = Tab:CreateButton({
 	end, 
 })
 
+local Button = Tab:CreateButton({
+	Name = "House",
+	Interact = 'Changable',
+	Callback = function()
+		x=-967
+
+		y=13
+
+		z=464
+
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(x,y,z)
+	end, 
+})
+
 local Section = Tab:CreateSection("Weapon seller",true) -- The 2nd argument is to tell if its only a Title and doesnt contain elements
 
 local Button = Tab:CreateButton({
