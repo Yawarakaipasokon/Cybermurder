@@ -530,7 +530,7 @@ local Button = Tab:CreateButton({
 		chatFrame.ChatChannelParentFrame.Visible = true
 		chatFrame.ChatBarParentFrame.Position = chatFrame.ChatChannelParentFrame.Position+UDim2.new(UDim.new(),chatFrame.ChatChannelParentFrame.Size.Y)
 	end, 
-})
+}) 
 
 local Tab = Window:CreateTab("Créditos", 5194730847) -- Title, Image
 
