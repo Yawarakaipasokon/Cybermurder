@@ -1,8 +1,8 @@
 local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
 
 local Window = Rayfield:CreateWindow({
-	Name = "YPHub",
-	LoadingTitle = "Loading YPHub...",
+	Name = "Brasil 2023",
+	LoadingTitle = "Loading Brasil 2023...",
 	LoadingSubtitle = "Creator： YawaPaso",
 	ConfigurationSaving = {
 		Enabled = false,
@@ -16,7 +16,7 @@ local Window = Rayfield:CreateWindow({
 	},
 	KeySystem = true, -- Set this to true to use our key system
 	KeySettings = {
-		Title = "YPHub",
+		Title = "Brasil 2023",
 		Subtitle = "Key system.",
 		Note = "Please paste the Key",
 		FileName = "SiriusKey",
