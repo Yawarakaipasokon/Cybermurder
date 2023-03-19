@@ -420,10 +420,10 @@ local Button = Tab:CreateButton({
 	end, 
 })
 
-local Tab = Window:CreateTab("Others", 4483362458) -- Title, Image
+local Tab = Window:CreateTab("Outros", 4483362458) -- Title, Image
 
 local Toggle = Tab:CreateToggle({
-	Name = "Choque poligonal (Sign obrigatório)",
+	Name = "Choque poligonal (Tabuleta necessário)",
 	CurrentValue = false,
 	Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
 	Callback = function(Value)
