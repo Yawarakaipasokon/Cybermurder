@@ -109,7 +109,7 @@ local Tab = Window:CreateTab("Teleporte", 6723742952) -- Title, Image
 local Section = Tab:CreateSection("Fora da base",true) -- The 2nd argument is to tell if its only a Title and doesnt contain elements
 
 local Button = Tab:CreateButton({
-	Name = "Campo de arroz",
+	Name = "Campo de arroz I",
 	Interact = 'Changable',
 	Callback = function()
 		x=179
@@ -123,7 +123,7 @@ local Button = Tab:CreateButton({
 })
 
 local Button = Tab:CreateButton({
-	Name = "Campo de arroz.",
+	Name = "Campo de arroz II",
 	Interact = 'Changable',
 	Callback = function()
 		x=-897
