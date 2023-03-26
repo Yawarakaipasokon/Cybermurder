@@ -1,8 +1,8 @@
 local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
 
 local Window = Rayfield:CreateWindow({
-	Name = "Brasil 2023",
-	LoadingTitle = "Loading Brasil 2023...",
+	Name = "YPHub",
+	LoadingTitle = "Loading YPHub...",
 	LoadingSubtitle = "Creator： YawaPaso",
 	ConfigurationSaving = {
 		Enabled = false,
@@ -10,19 +10,19 @@ local Window = Rayfield:CreateWindow({
 		FileName = "Big Hub"
 	},
 	Discord = {
-		Enabled = true,
+		Enabled = false,
 		Invite = "noinvitelink", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ABCD would be ABCD.
 		RememberJoins = true -- Set this to false to make them join the discord every time they load it up
 	},
-	KeySystem = true, -- Set this to true to use our key system
+	KeySystem = false, -- Set this to true to use our key system
 	KeySettings = {
-		Title = "Brasil 2023",
+		Title = "YPHub",
 		Subtitle = "Key system.",
-		Note = "Please paste the Key",
+		Note = "",
 		FileName = "SiriusKey",
-		SaveKey = true,
+		SaveKey = false,
 		GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
-		Key = "574520415245204558504c4f4954494e47"
+		Key = ""
 	}
 })
 
@@ -61,7 +61,7 @@ local Button = Tab:CreateButton({
 	Interact = 'Changable',
 	Callback = function()
 		local args = {
-			[1] = "Nambu14"
+			[1] = "Nambu 14"
 		}
 
 		game:GetService("ReplicatedStorage"):WaitForChild("ItemBuyingEvent"):FireServer(unpack(args))
@@ -187,20 +187,6 @@ local Button = Tab:CreateButton({
 		y=15
 
 		z=313
-
-		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(x,y,z)
-	end, 
-})
-
-local Button = Tab:CreateButton({
-	Name = "House",
-	Interact = 'Changable',
-	Callback = function()
-		x=-967
-
-		y=13
-
-		z=464
 
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(x,y,z)
 	end, 
@@ -538,4 +524,4 @@ local Label = Tab:CreateLabel("Library: Rayfield")
 
 local Label = Tab:CreateLabel("Creator： YawaPaso")
 
-local Paragraph = Tab:CreateParagraph({Title = "Supported game by this Scripts", Content = "露部六区洲基地"}) 
+local Paragraph = Tab:CreateParagraph({Title = "Supported game by this Scripts", Content = "露部六区洲基地"})
