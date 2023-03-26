@@ -1,0 +1,527 @@
+local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
+
+local Window = Rayfield:CreateWindow({
+	Name = "YPHub",
+	LoadingTitle = "Loading YPHub...",
+	LoadingSubtitle = "Creator： YawaPaso",
+	ConfigurationSaving = {
+		Enabled = false,
+		FolderName = nil, -- Create a custom folder for your hub/game
+		FileName = "Big Hub"
+	},
+	Discord = {
+		Enabled = false,
+		Invite = "noinvitelink", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ABCD would be ABCD.
+		RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+	},
+	KeySystem = false, -- Set this to true to use our key system
+	KeySettings = {
+		Title = "YPHub",
+		Subtitle = "Key system.",
+		Note = "",
+		FileName = "SiriusKey",
+		SaveKey = false,
+		GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+		Key = ""
+	}
+})
+
+local Tab = Window:CreateTab("Main", 6450238472) -- Title, Image
+
+local Section = Tab:CreateSection("Item",true) -- The 2nd argument is to tell if its only a Title and doesnt contain elements
+
+local Button = Tab:CreateButton({
+	Name = "Buy Bicycle (1 Yen)",
+	Interact = 'Changable',
+	Callback = function()
+		local args = {
+			[1] = "Bicycle"
+		}
+
+		game:GetService("ReplicatedStorage"):WaitForChild("ItemBuyingEvent"):FireServer(unpack(args))
+	end,
+})
+
+local Button = Tab:CreateButton({
+	Name = "Buy Sign (80 Sen)",
+	Interact = 'Changable',
+	Callback = function()
+		local args = {
+			[1] = "Sign"
+		}
+
+		game:GetService("ReplicatedStorage"):WaitForChild("ItemBuyingEvent"):FireServer(unpack(args))
+	end,
+})
+
+local Section = Tab:CreateSection("Item (Illegal)",true) -- The 2nd argument is to tell if its only a Title and doesnt contain elements
+
+local Button = Tab:CreateButton({
+	Name = "Buy Nambu 14 (4 Yen)",
+	Interact = 'Changable',
+	Callback = function()
+		local args = {
+			[1] = "Nambu 14"
+		}
+
+		game:GetService("ReplicatedStorage"):WaitForChild("ItemBuyingEvent"):FireServer(unpack(args))
+	end,
+})
+
+local Button = Tab:CreateButton({
+	Name = "Buy C96 (5 Yen)",
+	Interact = 'Changable',
+	Callback = function()
+		local args = {
+			[1] = "C96"
+		}
+
+		game:GetService("ReplicatedStorage"):WaitForChild("ItemBuyingEvent"):FireServer(unpack(args))
+	end,
+})
+
+local Button = Tab:CreateButton({
+	Name = "Buy M1911 (7 Yen)",
+	Interact = 'Changable',
+	Callback = function()
+		local args = {
+			[1] = "M1911"
+		}
+
+		game:GetService("ReplicatedStorage"):WaitForChild("ItemBuyingEvent"):FireServer(unpack(args))
+	end,
+})
+
+local Button = Tab:CreateButton({
+	Name = "Buy M1897 (10 Yen)",
+	Interact = 'Changable',
+	Callback = function()
+		local args = {
+			[1] = "M1897"
+		}
+
+		game:GetService("ReplicatedStorage"):WaitForChild("ItemBuyingEvent"):FireServer(unpack(args))
+	end,
+})
+
+local Tab = Window:CreateTab("Teleport", 6723742952) -- Title, Image
+
+local Section = Tab:CreateSection("Outside of Base",true) -- The 2nd argument is to tell if its only a Title and doesnt contain elements
+
+local Button = Tab:CreateButton({
+	Name = "Rice Field",
+	Interact = 'Changable',
+	Callback = function()
+		x=179
+
+		y=5
+
+		z=556
+
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(x,y,z)
+	end,
+})
+
+local Button = Tab:CreateButton({
+	Name = "Rice Field II",
+	Interact = 'Changable',
+	Callback = function()
+		x=-897
+
+		y=5
+
+		z=-292
+
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(x,y,z)
+	end,
+})
+
+local Button = Tab:CreateButton({
+	Name = "Un Cave",
+	Interact = 'Changable',
+	Callback = function()
+		x=900
+
+		y=5
+
+		z=408
+
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(x,y,z)
+	end, 
+})
+
+local Button = Tab:CreateButton({
+	Name = "Workshop",
+	Interact = 'Changable',
+	Callback = function()
+		x=-85
+
+		y=5
+
+		z=435
+
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(x,y,z)
+	end, 
+})
+
+local Button = Tab:CreateButton({
+	Name = "Jilm dining hall",
+	Interact = 'Changable',
+	Callback = function()
+		x=-326
+
+		y=15
+
+		z=358
+
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(x,y,z)
+	end, 
+})
+
+local Button = Tab:CreateButton({
+	Name = "Eap dining hall",
+	Interact = 'Changable',
+	Callback = function()
+		x=431
+
+		y=15
+
+		z=313
+
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(x,y,z)
+	end, 
+})
+
+local Section = Tab:CreateSection("Weapon seller",true) -- The 2nd argument is to tell if its only a Title and doesnt contain elements
+
+local Button = Tab:CreateButton({
+	Name = "Weapon seller I ",
+	Interact = 'Changable',
+	Callback = function()
+		x=-203
+
+		y=5
+
+		z=354
+
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(x,y,z)
+	end, 
+})
+
+local Button = Tab:CreateButton({
+	Name = "Weapon seller II",
+	Interact = 'Changable',
+	Callback = function()
+		x=-317
+
+		y=5
+
+		z=513
+
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(x,y,z)
+	end, 
+})
+
+local Button = Tab:CreateButton({
+	Name = "Weapon seller III",
+	Interact = 'Changable',
+	Callback = function()
+		x=641
+
+		y=11
+
+		z=1041
+
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(x,y,z)
+	end, 
+})
+
+local Button = Tab:CreateButton({
+	Name = "Weapon seller IV",
+	Interact = 'Changable',
+	Callback = function()
+		x=800
+
+		y=5
+
+		z=340
+
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(x,y,z)
+	end, 
+})
+
+local Button = Tab:CreateButton({
+	Name = "Weapon seller V",
+	Interact = 'Changable',
+	Callback = function()
+		x=-868
+
+		y=5
+
+		z=25
+
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(x,y,z)
+	end, 
+})
+
+local Section = Tab:CreateSection("Inside of Base",true) -- The 2nd argument is to tell if its only a Title and doesnt contain elements
+
+local Button = Tab:CreateButton({
+	Name = "Warehouse 2F",
+	Interact = 'Changable',
+	Callback = function()
+		x=33
+
+		y=20
+
+		z=-48
+
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(x,y,z)
+	end, 
+})
+
+local Button = Tab:CreateButton({
+	Name = "Jail",
+	Interact = 'Changable',
+	Callback = function()
+		x=69
+
+		y=14
+
+		z=209
+
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(x,y,z)
+	end, 
+})
+
+local Button = Tab:CreateButton({
+	Name = "Military police Dormitory (Commander room)",
+	Interact = 'Changable',
+	Callback = function()
+		x=86
+
+		y=20
+
+		z=119
+
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(x,y,z)
+	end, 
+})
+
+local Button = Tab:CreateButton({
+	Name = "Great man's room",
+	Interact = 'Changable',
+	Callback = function()
+		x=-18 
+
+		y=26
+
+		z=-212
+
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(x,y,z)
+	end, 
+})
+
+local Button = Tab:CreateButton({
+	Name = "Middle of Classroom",
+	Interact = 'Changable',
+	Callback = function()
+		x=-40 
+
+		y=5
+
+		z=-628
+
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(x,y,z)
+	end, 
+})
+
+local Button = Tab:CreateButton({
+	Name = "Air forces Headquarters",
+	Interact = 'Changable',
+	Callback = function()
+		x=307
+
+		y=5
+
+		z=-262
+
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(x,y,z)
+	end, 
+})
+
+local Button = Tab:CreateButton({
+	Name = "Tank forces Base",
+	Interact = 'Changable',
+	Callback = function()
+		x=-286
+
+		y=5
+
+		z=-451
+
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(x,y,z)
+	end, 
+})
+
+local Button = Tab:CreateButton({
+	Name = "Roof",
+	Interact = 'Changable',
+	Callback = function()
+		x=-18
+
+		y=51
+
+		z=-249
+
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(x,y,z)
+	end, 
+})
+
+local Button = Tab:CreateButton({
+	Name = "Obby",
+	Interact = 'Changable',
+	Callback = function()
+		x=-200
+
+		y=5
+
+		z=-1029
+
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(x,y,z)
+	end, 
+})
+
+local Button = Tab:CreateButton({
+	Name = "Traning field",
+	Interact = 'Changable',
+	Callback = function()
+		x=-18
+
+		y=2
+
+		z=-440
+
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(x,y,z)
+	end, 
+})
+
+local Tab = Window:CreateTab("Others", 4483362458) -- Title, Image
+
+local Toggle = Tab:CreateToggle({
+	Name = "Polygon shock (Sign Required)",
+	CurrentValue = false,
+	Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+	Callback = function(Value)
+		while Value do 
+			local args = {
+				[1] = "12686939435"
+			}
+
+			game:GetService("Players").LocalPlayer.Character.Sign.UpdateSign:FireServer(unpack(args))
+
+			wait(0)
+
+			local args = {
+				[1] = "12686938317"
+			}
+
+			game:GetService("Players").LocalPlayer.Character.Sign.UpdateSign:FireServer(unpack(args))
+
+			wait(0)
+		end
+	end,
+})
+
+local Button = Tab:CreateButton({
+	Name = "Infnite Yield",
+	Interact = 'Changable',
+	Callback = function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+	end
+})
+
+local Button = Tab:CreateButton({
+	Name = "Chat spy",
+	Interact = 'Changable',
+	Callback = function()
+		print("-- Chat Spy Executed --")
+		print("Type \"spy\" to enable or disable the chat spy.")
+		print("Only tested if this works executed with Synapse (should work with other exploits though)")
+		print("https://github.com/dehoisted/Chat-Spy")
+
+		-- Config
+		Config = {
+			enabled = true,
+			spyOnMyself = true,
+			public = false,
+			publicItalics = true
+		}
+
+		-- Customizing Log Output
+		PrivateProperties = {
+			Color = Color3.fromRGB(0,255,255); 
+			Font = Enum.Font.SourceSansBold;
+			TextSize = 18;
+		}
+
+		local StarterGui = game:GetService("StarterGui")
+		local Players = game:GetService("Players")
+		local player = Players.LocalPlayer
+		local saymsg = game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest")
+		local getmsg = game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("OnMessageDoneFiltering")
+		local instance = (_G.chatSpyInstance or 0) + 1
+		_G.chatSpyInstance = instance
+
+		local function onChatted(p,msg)
+			if _G.chatSpyInstance == instance then
+				if p==player and msg:lower():sub(1,4)=="/spy" then
+					Config.enabled = not Config.enabled
+					wait(0.3)
+					PrivateProperties.Text = "{SPY "..(Config.enabled and "EN" or "DIS").."ABLED}"
+					StarterGui:SetCore("ChatMakeSystemMessage", PrivateProperties)
+				elseif Config.enabled and (Config.spyOnMyself==true or p~=player) then
+					msg = msg:gsub("[\n\r]",''):gsub("\t",' '):gsub("[ ]+",' ')
+					local hidden = true
+					local conn = getmsg.OnClientEvent:Connect(function(packet,channel)
+						if packet.SpeakerUserId==p.UserId and packet.Message==msg:sub(#msg-#packet.Message+1) and (channel=="All" or (channel=="Team" and Config.public==false and Players[packet.FromSpeaker].Team==player.Team)) then
+							hidden = false
+						end
+					end)
+					wait(1)
+					conn:Disconnect()
+					if hidden and Config.enabled then
+						if Config.public then
+							saymsg:FireServer((Config.publicItalics and "/me " or '').."{SPY} [".. p.Name .."]: "..msg,"All")
+						else
+							PrivateProperties.Text = "{SPY} [".. p.Name .."]: "..msg
+							StarterGui:SetCore("ChatMakeSystemMessage", PrivateProperties)
+						end
+					end
+				end
+			end
+		end
+
+		for _,p in ipairs(Players:GetPlayers()) do
+			p.Chatted:Connect(function(msg) onChatted(p,msg) end)
+		end
+
+		Players.PlayerAdded:Connect(function(p)
+			p.Chatted:Connect(function(msg) onChatted(p,msg) end)
+		end)
+
+		PrivateProperties.Text = "{SPY "..(Config.enabled and "EN" or "DIS").."ABLED}"
+		StarterGui:SetCore("ChatMakeSystemMessage", PrivateProperties)
+		local chatFrame = player.PlayerGui.Chat.Frame
+		chatFrame.ChatChannelParentFrame.Visible = true
+		chatFrame.ChatBarParentFrame.Position = chatFrame.ChatChannelParentFrame.Position+UDim2.new(UDim.new(),chatFrame.ChatChannelParentFrame.Size.Y)
+	end, 
+})
+
+local Tab = Window:CreateTab("Credits", 5194730847) -- Title, Image
+
+local Label = Tab:CreateLabel("Library: Rayfield")
+
+local Label = Tab:CreateLabel("Creator： YawaPaso")
+
+local Paragraph = Tab:CreateParagraph({Title = "Supported game by this Scripts", Content = "露部六区洲基地"})
