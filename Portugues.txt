@@ -1,8 +1,8 @@
 local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
 
 local Window = Rayfield:CreateWindow({
-	Name = "Brasil 2023",
-	LoadingTitle = "Carregando Brasil 2023...",
+	Name = "Cyber-Meurtre",
+	LoadingTitle = "Carregando Cyber-Meurtre...",
 	LoadingSubtitle = "Criador： YawaPaso",
 	ConfigurationSaving = {
 		Enabled = false,
@@ -16,7 +16,7 @@ local Window = Rayfield:CreateWindow({
 	},
 	KeySystem = true, -- Set this to true to use our key system
 	KeySettings = {
-		Title = "Brasil 2023",
+		Title = "Cyber-Meurtre",
 		Subtitle = "Sistema de chave",
 		Note = "Por favor colocar o chave",
 		FileName = "SiriusKey",
