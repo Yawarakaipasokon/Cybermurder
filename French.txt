@@ -1,9 +1,9 @@
 local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
 
 local Window = Rayfield:CreateWindow({
-	Name = "YPHub",
-	LoadingTitle = "Loading YPHub...",
-	LoadingSubtitle = "Creator： YawaPaso",
+	Name = "Cyber-Meurtre",
+	LoadingTitle = "Chargement de Cyber-Meurtre...",
+	LoadingSubtitle = "Créateur： YawaPaso",
 	ConfigurationSaving = {
 		Enabled = false,
 		FolderName = nil, -- Create a custom folder for your hub/game
@@ -16,9 +16,9 @@ local Window = Rayfield:CreateWindow({
 	},
 	KeySystem = false, -- Set this to true to use our key system
 	KeySettings = {
-		Title = "YPHub",
-		Subtitle = "Key system.",
-		Note = "",
+		Title = "Cyber-Meurtre",
+		Subtitle = "Systeme de clé",
+		Note = "S'il vous plaît pâte la clé",
 		FileName = "SiriusKey",
 		SaveKey = false,
 		GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
@@ -26,12 +26,12 @@ local Window = Rayfield:CreateWindow({
 	}
 })
 
-local Tab = Window:CreateTab("Main", 6450238472) -- Title, Image
+local Tab = Window:CreateTab("Principal", 6450238472) -- Title, Image
 
-local Section = Tab:CreateSection("Item",true) -- The 2nd argument is to tell if its only a Title and doesnt contain elements
+local Section = Tab:CreateSection("Article",true) -- The 2nd argument is to tell if its only a Title and doesnt contain elements
 
 local Button = Tab:CreateButton({
-	Name = "Buy Bicycle (1 Yen)",
+	Name = "Acheter Vélo (1 Yen)",
 	Interact = 'Changable',
 	Callback = function()
 		local args = {
@@ -43,7 +43,7 @@ local Button = Tab:CreateButton({
 })
 
 local Button = Tab:CreateButton({
-	Name = "Buy Sign (80 Sen)",
+	Name = "Acheter Signe (80 Sen)",
 	Interact = 'Changable',
 	Callback = function()
 		local args = {
@@ -54,10 +54,10 @@ local Button = Tab:CreateButton({
 	end,
 })
 
-local Section = Tab:CreateSection("Item (Illegal)",true) -- The 2nd argument is to tell if its only a Title and doesnt contain elements
+local Section = Tab:CreateSection("Article (Illégal)",true) -- The 2nd argument is to tell if its only a Title and doesnt contain elements
 
 local Button = Tab:CreateButton({
-	Name = "Buy Nambu 14 (4 Yen)",
+	Name = "Acheter Nambu 14 (4 Yen)",
 	Interact = 'Changable',
 	Callback = function()
 		local args = {
@@ -69,7 +69,7 @@ local Button = Tab:CreateButton({
 })
 
 local Button = Tab:CreateButton({
-	Name = "Buy C96 (5 Yen)",
+	Name = "Acheter C96 (5 Yen)",
 	Interact = 'Changable',
 	Callback = function()
 		local args = {
@@ -81,7 +81,7 @@ local Button = Tab:CreateButton({
 })
 
 local Button = Tab:CreateButton({
-	Name = "Buy M1911 (7 Yen)",
+	Name = "Acheter M1911 (7 Yen)",
 	Interact = 'Changable',
 	Callback = function()
 		local args = {
@@ -93,7 +93,7 @@ local Button = Tab:CreateButton({
 })
 
 local Button = Tab:CreateButton({
-	Name = "Buy M1897 (10 Yen)",
+	Name = "Acheter M1897 (10 Yen)",
 	Interact = 'Changable',
 	Callback = function()
 		local args = {
@@ -104,12 +104,12 @@ local Button = Tab:CreateButton({
 	end,
 })
 
-local Tab = Window:CreateTab("Teleport", 6723742952) -- Title, Image
+local Tab = Window:CreateTab("Téléportation", 6723742952) -- Title, Image
 
-local Section = Tab:CreateSection("Outside of Base",true) -- The 2nd argument is to tell if its only a Title and doesnt contain elements
+local Section = Tab:CreateSection("Dehors de base",true) -- The 2nd argument is to tell if its only a Title and doesnt contain elements
 
 local Button = Tab:CreateButton({
-	Name = "Rice Field",
+	Name = "Champ de riz",
 	Interact = 'Changable',
 	Callback = function()
 		x=179
@@ -123,7 +123,7 @@ local Button = Tab:CreateButton({
 })
 
 local Button = Tab:CreateButton({
-	Name = "Rice Field II",
+	Name = "Champ de riz II",
 	Interact = 'Changable',
 	Callback = function()
 		x=-897
@@ -137,7 +137,7 @@ local Button = Tab:CreateButton({
 })
 
 local Button = Tab:CreateButton({
-	Name = "Un Cave",
+	Name = "Grotte",
 	Interact = 'Changable',
 	Callback = function()
 		x=900
@@ -151,7 +151,7 @@ local Button = Tab:CreateButton({
 })
 
 local Button = Tab:CreateButton({
-	Name = "Workshop",
+	Name = "Atelier",
 	Interact = 'Changable',
 	Callback = function()
 		x=-85
@@ -165,7 +165,7 @@ local Button = Tab:CreateButton({
 })
 
 local Button = Tab:CreateButton({
-	Name = "Jilm dining hall",
+	Name = "Jilm Restaurant",
 	Interact = 'Changable',
 	Callback = function()
 		x=-326
@@ -179,7 +179,7 @@ local Button = Tab:CreateButton({
 })
 
 local Button = Tab:CreateButton({
-	Name = "Eap dining hall",
+	Name = "Eap Restaurant",
 	Interact = 'Changable',
 	Callback = function()
 		x=431
@@ -192,10 +192,10 @@ local Button = Tab:CreateButton({
 	end, 
 })
 
-local Section = Tab:CreateSection("Weapon seller",true) -- The 2nd argument is to tell if its only a Title and doesnt contain elements
+local Section = Tab:CreateSection("Marchand d'armes",true) -- The 2nd argument is to tell if its only a Title and doesnt contain elements
 
 local Button = Tab:CreateButton({
-	Name = "Weapon seller I ",
+	Name = "Marchand d'armes I ",
 	Interact = 'Changable',
 	Callback = function()
 		x=-203
@@ -209,7 +209,7 @@ local Button = Tab:CreateButton({
 })
 
 local Button = Tab:CreateButton({
-	Name = "Weapon seller II",
+	Name = "Marchand d'armes II",
 	Interact = 'Changable',
 	Callback = function()
 		x=-317
@@ -223,7 +223,7 @@ local Button = Tab:CreateButton({
 })
 
 local Button = Tab:CreateButton({
-	Name = "Weapon seller III",
+	Name = "Marchand d'armes III",
 	Interact = 'Changable',
 	Callback = function()
 		x=641
@@ -237,7 +237,7 @@ local Button = Tab:CreateButton({
 })
 
 local Button = Tab:CreateButton({
-	Name = "Weapon seller IV",
+	Name = "Marchand d'armes IV",
 	Interact = 'Changable',
 	Callback = function()
 		x=800
@@ -251,7 +251,7 @@ local Button = Tab:CreateButton({
 })
 
 local Button = Tab:CreateButton({
-	Name = "Weapon seller V",
+	Name = "Marchand d'armes V",
 	Interact = 'Changable',
 	Callback = function()
 		x=-868
@@ -264,10 +264,10 @@ local Button = Tab:CreateButton({
 	end, 
 })
 
-local Section = Tab:CreateSection("Inside of Base",true) -- The 2nd argument is to tell if its only a Title and doesnt contain elements
+local Section = Tab:CreateSection("À l'intérieur de base",true) -- The 2nd argument is to tell if its only a Title and doesnt contain elements
 
 local Button = Tab:CreateButton({
-	Name = "Warehouse 2F",
+	Name = "Entrepôt 2F",
 	Interact = 'Changable',
 	Callback = function()
 		x=33
@@ -281,7 +281,7 @@ local Button = Tab:CreateButton({
 })
 
 local Button = Tab:CreateButton({
-	Name = "Jail",
+	Name = "Geôle",
 	Interact = 'Changable',
 	Callback = function()
 		x=69
@@ -295,7 +295,7 @@ local Button = Tab:CreateButton({
 })
 
 local Button = Tab:CreateButton({
-	Name = "Military police Dormitory (Commander room)",
+	Name = "Dortoir de Police militaire (Salle du commandant)",
 	Interact = 'Changable',
 	Callback = function()
 		x=86
@@ -309,7 +309,7 @@ local Button = Tab:CreateButton({
 })
 
 local Button = Tab:CreateButton({
-	Name = "Great man's room",
+	Name = "Salle du grand man",
 	Interact = 'Changable',
 	Callback = function()
 		x=-18 
@@ -323,7 +323,7 @@ local Button = Tab:CreateButton({
 })
 
 local Button = Tab:CreateButton({
-	Name = "Middle of Classroom",
+	Name = "Milieu de classe",
 	Interact = 'Changable',
 	Callback = function()
 		x=-40 
@@ -337,7 +337,7 @@ local Button = Tab:CreateButton({
 })
 
 local Button = Tab:CreateButton({
-	Name = "Air forces Headquarters",
+	Name = "Quartier général des forces aériennes.",
 	Interact = 'Changable',
 	Callback = function()
 		x=307
@@ -351,7 +351,7 @@ local Button = Tab:CreateButton({
 })
 
 local Button = Tab:CreateButton({
-	Name = "Tank forces Base",
+	Name = "Base de forces de chars",
 	Interact = 'Changable',
 	Callback = function()
 		x=-286
@@ -365,7 +365,7 @@ local Button = Tab:CreateButton({
 })
 
 local Button = Tab:CreateButton({
-	Name = "Roof",
+	Name = "Toit",
 	Interact = 'Changable',
 	Callback = function()
 		x=-18
@@ -393,7 +393,7 @@ local Button = Tab:CreateButton({
 })
 
 local Button = Tab:CreateButton({
-	Name = "Traning field",
+	Name = "Champ de formation",
 	Interact = 'Changable',
 	Callback = function()
 		x=-18
@@ -406,10 +406,10 @@ local Button = Tab:CreateButton({
 	end, 
 })
 
-local Tab = Window:CreateTab("Others", 4483362458) -- Title, Image
+local Tab = Window:CreateTab("Autres", 4483362458) -- Title, Image
 
 local Toggle = Tab:CreateToggle({
-	Name = "Polygon shock (Sign Required)",
+	Name = "Choc polygonal (Signe requis)",
 	CurrentValue = false,
 	Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
 	Callback = function(Value)
@@ -442,7 +442,7 @@ local Button = Tab:CreateButton({
 })
 
 local Button = Tab:CreateButton({
-	Name = "Chat spy",
+	Name = "Espion de Beverdage",
 	Interact = 'Changable',
 	Callback = function()
 		print("-- Chat Spy Executed --")
@@ -518,10 +518,10 @@ local Button = Tab:CreateButton({
 	end, 
 })
 
-local Tab = Window:CreateTab("Credits", 5194730847) -- Title, Image
+local Tab = Window:CreateTab("Crédits", 5194730847) -- Title, Image
 
-local Label = Tab:CreateLabel("Library: Rayfield")
+local Label = Tab:CreateLabel("Bibliothèque: Rayfield")
 
-local Label = Tab:CreateLabel("Creator： YawaPaso")
+local Label = Tab:CreateLabel("Créateur： YawaPaso")
 
-local Paragraph = Tab:CreateParagraph({Title = "Supported game by this Scripts", Content = "露部六区洲基地"})
+local Paragraph = Tab:CreateParagraph({Title = "Jeu pris en charge par ces scripts", Content = "露部六区洲基地"})
