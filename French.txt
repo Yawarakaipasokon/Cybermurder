@@ -309,7 +309,7 @@ local Button = Tab:CreateButton({
 })
 
 local Button = Tab:CreateButton({
-	Name = "Salle du grand man",
+	Name = "Salle du grand homme",
 	Interact = 'Changable',
 	Callback = function()
 		x=-18 
