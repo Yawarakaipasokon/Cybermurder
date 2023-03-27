@@ -106,7 +106,7 @@ local Button = Tab:CreateButton({
 
 local Tab = Window:CreateTab("텔레포트", 6723742952) -- Title, Image
 
-local Section = Tab:CreateSection("Outside of Base",true) -- The 2nd argument is to tell if its only a Title and doesnt contain elements
+local Section = Tab:CreateSection("기지 외부",true) -- The 2nd argument is to tell if its only a Title and doesnt contain elements
 
 local Button = Tab:CreateButton({
 	Name = "밭",
