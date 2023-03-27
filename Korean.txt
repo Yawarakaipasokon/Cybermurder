@@ -420,7 +420,7 @@ local Button = Tab:CreateButton({
 	end, 
 })
 
-local Tab = Window:CreateTab("그밖", 4483362458) -- Title, Image
+local Tab = Window:CreateTab("그밖", 4483362458) -- Title, Image 
 
 local Toggle = Tab:CreateToggle({
 	Name = "폴리곤 쇼크 (사인이 필요)",
