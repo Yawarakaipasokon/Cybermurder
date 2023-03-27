@@ -54,7 +54,7 @@ local Button = Tab:CreateButton({
 	end,
 })
 
-local Section = Tab:CreateSection("Item (Illegal)",true) -- The 2nd argument is to tell if its only a Title and doesnt contain elements
+local Section = Tab:CreateSection("物品 (非法的)",true) -- The 2nd argument is to tell if its only a Title and doesnt contain elements
 
 local Button = Tab:CreateButton({
 	Name = "购买南部14 (4 Yen)",
@@ -420,7 +420,7 @@ local Button = Tab:CreateButton({
 	end, 
 })
 
-local Tab = Window:CreateTab("Others", 4483362458) -- Title, Image
+local Tab = Window:CreateTab("其他的", 4483362458) -- Title, Image
 
 local Toggle = Tab:CreateToggle({
 	Name = "多边形震动 (需要标志)",
