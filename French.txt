@@ -57,11 +57,11 @@ local Button = Tab:CreateButton({
 local Section = Tab:CreateSection("Article (Illégal)",true) -- The 2nd argument is to tell if its only a Title and doesnt contain elements
 
 local Button = Tab:CreateButton({
-	Name = "Acheter Nambu14 (4 Yen)",
+	Name = "Acheter Nambu 14 (4 Yen)",
 	Interact = 'Changable',
 	Callback = function()
 		local args = {
-			[1] = "Nambu 14"
+			[1] = "Nambu14"
 		}
 
 		game:GetService("ReplicatedStorage"):WaitForChild("ItemBuyingEvent"):FireServer(unpack(args))
